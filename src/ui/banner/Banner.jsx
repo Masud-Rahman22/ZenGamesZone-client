@@ -39,7 +39,7 @@ export default function Banner() {
                     }}
                     data-swiper-parallax="-23%"
                 ></div>
-                <SwiperSlide style={{border: 2, borderColor: "red"}}>
+                <SwiperSlide className='swiper-allText'>
                     <div className="title" data-swiper-parallax="-300">
                         Slide 1
                     </div>
