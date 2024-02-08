@@ -1,9 +1,12 @@
-
+import Banner from "@/ui/banner/Banner";
 
 const HomePage = () => {
   return (
     <div>
-      <h1>Welcome to the homepage</h1>
+      <div className="h-screen">
+      <Banner></Banner>
+      </div>
+      
     </div>
   );
 };
