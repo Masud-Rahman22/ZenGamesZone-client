@@ -17,7 +17,8 @@ import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { grey } from '@mui/material/colors';
-
+import Image from 'next/image';
+import logo from "@/assets/logo/logo.jpg"
 const color = grey[900];
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -167,6 +168,7 @@ export default function NavBar() {
                         color="inherit"
                         aria-label="open drawer"
                         sx={{ mr: 2 }}
+                        onClick={handleProfileMenuOpen}
                     >
                         <MenuIcon />
                     </IconButton>
@@ -176,7 +178,7 @@ export default function NavBar() {
                         component="div"
                         sx={{ display: { xs: 'none', sm: 'block' } }}
                     >
-                        Zen<span style={{color: "red", fontSize: '30px'}}>Games</span>Zone
+                        <Image src={logo} alt='logo' width={70}></Image>
                     </Typography>
                     <Search>
                         <SearchIconWrapper>
