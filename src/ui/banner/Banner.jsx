@@ -39,22 +39,16 @@ export default function Banner() {
                     }}
                     data-swiper-parallax="-23%"
                 ></div>
-                <SwiperSlide className='swiper-allText'>
+                <SwiperSlide>
                     <div className="title" data-swiper-parallax="-300">
-                        Slide 1
+                    Elevate Your Play, <span style={{color: "red"}}>Unleash Your Power</span>
                     </div>
                     <div className="subtitle" data-swiper-parallax="-200">
-                        Subtitle
+                        Game on, Level up!🎮
                     </div>
                     <div className="text" data-swiper-parallax="-100">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                            dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
-                            laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
-                            Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
-                            Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
-                            ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
-                            tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                        Welcome to [Your Gaming Website Name], where every click sparks new adventures, every win fuels triumph, and every gamer finds their epic tale. Join our community of thrill-seekers, explorers, and champions, and let us rewrite the rules of gaming together. Get ready to dominate, to conquer, and to reign supreme. Your quest begins now.
                         </p>
                     </div>
                 </SwiperSlide>
