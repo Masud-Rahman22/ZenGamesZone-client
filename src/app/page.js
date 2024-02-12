@@ -1,5 +1,6 @@
 "use client"
 import Banner from "@/ui/banner/Banner";
+import CountSection from "@/ui/countUp/CountSection";
 import GallerySection from "@/ui/gallery/GallerySection";
 
 const HomePage = () => {
@@ -9,6 +10,9 @@ const HomePage = () => {
       <Banner></Banner>
       </div>
       <GallerySection></GallerySection>
+      <div style={{height: "400px"}}>
+        <CountSection></CountSection>
+      </div>
     </div>
   );
 };
