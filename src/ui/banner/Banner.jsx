@@ -11,8 +11,8 @@ const Banner = () => {
                 Your browser does not support the video tag.
             </video>
             {/* You can add additional content over the video if needed */}
-            <div style={{ position: 'relative', zIndex: 1 }}>
-                <h1 style={{text}}>this is gameplay</h1>
+            <div style={{ position: 'relative', zIndex: 1000, display: 'flex', justifyContent: "center", paddingTop: "80px" }}>
+                <h1 style={{"font-size": "30px" ,"color": "white"}}>Explore, Compete, Conquer: Welcome to <span style={{"color": 'red', "fontSize": "40px" }} className='backdrop-blur-md'>ZenGamesZone</span></h1>
             </div>
         </div>
     );
