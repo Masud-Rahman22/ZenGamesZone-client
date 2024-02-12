@@ -1,3 +1,4 @@
+
 import Banner from "@/ui/banner/Banner";
 
 const HomePage = () => {
