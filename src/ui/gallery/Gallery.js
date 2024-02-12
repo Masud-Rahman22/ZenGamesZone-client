@@ -1,3 +1,4 @@
+"use client"
 import img1 from '@/assets/gallery/img1.jpg';
 import img2 from '@/assets/gallery/img2.jpg';
 import img3 from '@/assets/gallery/img3.jpg';
@@ -12,6 +13,7 @@ import img12 from '@/assets/gallery/img12.jpg';
 import img13 from '@/assets/gallery/img13.jpg';
 import Image from 'next/image';
 import './gallery.css'
+import { useState } from 'react';
 const Gallery = () => {
     let data = [
         {
@@ -63,18 +65,29 @@ const Gallery = () => {
             imgSrc: img13,
         },
     ]
+    const [model, setModel] = useState(false);
+    const [tempImgSrc, setTempImgSrc] = useState('');
+    const getItem = (imgSrc) => {
+        setTempImgSrc(imgSrc)
+        setModel(true)
+    }
     return (
-        <div className='gallery'>
-            {
-                data.map((item, i) => {
-                    return (
-                        <div key={i} className='pics'>
-                            <Image src={item.imgSrc} alt='gallery images' width={"100%"}></Image>
-                        </div>
-                    )
-                })
-            }
-        </div>
+        <>
+            <div className={model ? 'model-open' : 'model'}>
+                <Image className='img' src={tempImgSrc} alt='gallery image'></Image>
+            </div>
+            <div className='gallery'>
+                {
+                    data.map((item, i) => {
+                        return (
+                            <div key={i} className='pics' onClick={() => getItem(item.imgSrc)}>
+                                <Image src={item.imgSrc} alt='gallery images' width={"100%"}></Image>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+        </>
     )
 }
 export default Gallery;
