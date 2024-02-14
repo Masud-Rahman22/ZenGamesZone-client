@@ -27,14 +27,19 @@ import image13 from "@/assets/strategyGames/image13.jpeg"
 import image14 from "@/assets/strategyGames/image14.jpg"
 import image15 from "@/assets/strategyGames/image15.jpeg"
 import image16 from "@/assets/strategyGames/image16.jpeg"
+import { Press_Start_2P } from 'next/font/google'
+const Press = Press_Start_2P({ subsets: ['latin'],display: 'swap', weight: "400" })
 const ShowCase = () => {
     const gridContainerStyle = {
         display: 'grid',
         gridTemplateColumns: 'repeat(4, 1fr)', // Creates 4 columns with equal width
     };
     return (
-        <div style={gridContainerStyle}>
+        <div>
+            <h1 style={{color:"white", fontSize: "30px", textAlign: "center", margin: "40px 0px", }} className={Press.className}><span style={{ color: 'red', fontSize: "40px"}}>ZenGamesZone</span><br /> Premier Showcase Selection</h1>
+            <div style={gridContainerStyle}>
             {/* One */}
+            <div>
             <Swiper
                 effect={'cards'}
                 grabCursor={true}
@@ -46,7 +51,10 @@ const ShowCase = () => {
                 <SwiperSlide><Image src={image3} alt="image3" width={"100%"}></Image></SwiperSlide>
                 <SwiperSlide><Image src={image4} alt="image4" width={"100%"}></Image></SwiperSlide>
             </Swiper>
+            <h1 style={{color: "red", fontSize:"20px", textAlign: "center", margin: "20px 0px"}} className={Press.className}>Action/Adventure Games</h1>
+            </div>
             {/* Two */}
+            <div>
             <Swiper
                 effect={'cards'}
                 grabCursor={true}
@@ -58,7 +66,10 @@ const ShowCase = () => {
                 <SwiperSlide><Image src={image7} alt="image7" width={"100%"}></Image></SwiperSlide>
                 <SwiperSlide><Image src={image8} alt="image8" width={"100%"}></Image></SwiperSlide>
             </Swiper>
+            <h1 style={{color: "red", fontSize:"20px", textAlign: "center", margin: "20px 0px"}} className={Press.className}>First-Person Shooters (FPS)</h1>
+            </div>
             {/* Three */}
+            <div>
             <Swiper
                 effect={'cards'}
                 grabCursor={true}
@@ -70,7 +81,10 @@ const ShowCase = () => {
                 <SwiperSlide><Image src={image11} alt="image11" width={"100%"}></Image></SwiperSlide>
                 <SwiperSlide><Image src={image12} alt="image12" width={"100%"}></Image></SwiperSlide>
             </Swiper>
+            <h1 style={{color: "red", fontSize:"20px", textAlign: "center", margin: "20px 0px"}} className={Press.className}>Role-Playing Games (RPGs)</h1>
+            </div>
             {/* Four */}
+            <div>
             <Swiper
                 effect={'cards'}
                 grabCursor={true}
@@ -82,6 +96,9 @@ const ShowCase = () => {
                 <SwiperSlide><Image src={image15} alt="image15" width={"100%"}></Image></SwiperSlide>
                 <SwiperSlide><Image src={image16} alt="image16" width={"100%"}></Image></SwiperSlide>
             </Swiper>
+            <h1 style={{color: "red", fontSize:"20px", textAlign: "center", margin: "20px 0px"}} className={Press.className}>Strategy Games</h1>
+            </div>
+        </div>
         </div>
     );
 };

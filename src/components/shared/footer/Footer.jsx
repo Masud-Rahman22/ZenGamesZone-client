@@ -1,8 +1,8 @@
-
+import './footer.css'
 
 const Footer = () => {
     return (
-        <div>
+        <div className='footer'>
             
         </div>
     );
