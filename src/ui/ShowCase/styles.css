@@ -92,3 +92,66 @@ body {
 .swiper-slide:nth-child(10n) {
     background-color: rgb(54, 94, 77);
 }
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery .pics {
+    width: calc(25% - 12px); /* Set the width of each picture with margin accounted for */
+    margin: 6px; /* Margin to separate each picture */
+    transition: all 350ms ease;
+    cursor: pointer;
+}
+.gallery .pics:hover {
+    opacity: 0.5;
+}
+@media (max-width: 1200px) {
+    .gallery .pics {
+        width: calc(33.33% - 12px); /* For smaller screens, set width to one-third with margin accounted for */
+    }
+}
+
+@media (max-width: 800px) {
+    .gallery .pics {
+        width: calc(50% - 12px); /* For even smaller screens, set width to one-half with margin accounted for */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery .pics {
+        width: calc(100% - 12px); /* For the smallest screens, set width to full width with margin accounted for */
+    }
+}
+
+.grid-wrap ul li:nth-child(1){
+    grid-row: span 2;
+    grid-column: span 3;
+}
+.grid-wrap ul li:nth-child(2){
+    grid-row: span 2;
+    grid-column: span 4;
+}
+.grid-wrap ul li:nth-child(3){
+    grid-row: span 2;
+    grid-column: span 5;
+}
+.grid-wrap ul li:nth-child(4){
+    grid-row: span 2;
+    grid-column: span 6;
+}
+.grid-wrap ul li:nth-child(5){
+    grid-row: span 4;
+    grid-column: span 3;
+}
+.grid-wrap ul li:nth-child(6){
+    grid-row: span 2;
+    grid-column: span 5;
+}
+.grid-wrap ul li:nth-child(7){
+    grid-row: span 2;
+    grid-column: span 6s;
+}

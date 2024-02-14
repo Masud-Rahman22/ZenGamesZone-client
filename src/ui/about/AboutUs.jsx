@@ -11,7 +11,7 @@ const AboutUs = () => {
                 </div>
                 <div style={{ flex: "1" }}>
                     <h1 style={{ color: "white", fontSize: "45px", fontWeight:"bold", marginBottom:"30px" }}>We are ZenGamesZone</h1>
-                    <p style={{ color: "white", fontSize: "20px" , marginBottom:"30px" }}>Welcome to ZenGamesZone, your ultimate destination for immersive gaming experiences. We're dedicated to providing a diverse range of games that captivate and inspire players of all levels. Whether you're seeking relaxation or thrills, our carefully curated selection ensures there's something for everyone. Join us on this journey of discovery and fun!</p>
+                    <p style={{ color: "white", fontSize: "20px" , marginBottom:"30px" }}>Welcome to ZenGamesZone, your ultimate destination for immersive gaming experiences. We are dedicated to providing a diverse range of games that captivate and inspire players of all levels. Whether you are seeking relaxation or thrills, our carefully curated selection ensures there is something for everyone. Join us on this journey of discovery and fun!</p>
                     <Button style={{ paddingLeft: "60px", paddingRight: "60px", paddingTop: "13px", paddingBottom: "13px", fontSize: "17px", backgroundColor: "black" , marginBottom:"20px"}} variant="contained" endIcon={<GiCrenelCrown />}>
                     Forge Your Legend
                     </Button>

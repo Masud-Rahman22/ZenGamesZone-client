@@ -1,4 +1,5 @@
 "use client"
+import Faq from "@/ui/Faq/Faq";
 import ShowCase from "@/ui/ShowCase/ShowCase";
 import AboutUs from "@/ui/about/AboutUs";
 import Banner from "@/ui/banner/Banner";
@@ -15,6 +16,7 @@ const HomePage = () => {
       <CountSection></CountSection>
       <AboutUs></AboutUs>
       <ShowCase></ShowCase>
+      <Faq></Faq>
     </div>
   );
 };
