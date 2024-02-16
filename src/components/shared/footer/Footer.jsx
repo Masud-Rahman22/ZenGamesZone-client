@@ -56,11 +56,25 @@ const Footer = () => {
                     <div className='sb_footer-links-div'>
                         <h4>Coming Soon On</h4>
                         <div className='socialMedia'>
-                        <FaFacebook />
-                        <GrInstagram />
-                        <FaLinkedin />
-                        <FaXTwitter />
+                        <p style={{width:"80%"}}><FaFacebook /></p>
+                        <p style={{width:"80%"}}><GrInstagram /></p>
+                        <p style={{width:"80%"}}><FaLinkedin /></p>
+                        <p style={{width:"80%"}}><FaXTwitter /></p>
                         </div>
+                    </div>
+                </div>
+                <hr />
+                <div className='sb_footer-below'>
+                    <div className='sb_footer-copyright'>
+                        <p>
+                            @2024 Masud Rahman. All right reserved.
+                        </p>
+                    </div>
+                    <div className='sb_footer-below-links'>
+                        <a href="/terms"><div><p>Terms & Conditions</p></div></a>
+                        <a href="/privacy"><div><p>Privacy</p></div></a>
+                        <a href="/security"><div><p>Security</p></div></a>
+                        <a href="/cookie"><div><p>Cookie declaration</p></div></a>
                     </div>
                 </div>
             </div>

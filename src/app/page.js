@@ -14,9 +14,9 @@ const HomePage = () => {
         <Banner></Banner>
       </div>
       <GallerySection></GallerySection>
-      <CountSection></CountSection>
-      <AboutUs></AboutUs>
       <ShowCase></ShowCase>
+      <AboutUs></AboutUs>
+      <CountSection></CountSection>
       <FAQ></FAQ>
     </div>
   );

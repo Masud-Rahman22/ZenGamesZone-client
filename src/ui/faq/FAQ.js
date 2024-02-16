@@ -20,7 +20,7 @@ const Accordion = styled((props) => (
 
 const AccordionSummary = styled((props) => (
     <MuiAccordionSummary
-        expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '1.5rem' }} />}
+        expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '1.5rem', color:"white" }} />}
         {...props}
     />
 ))(({ theme }) => ({
@@ -50,7 +50,7 @@ export default function FAQ() {
     };
 
     return (
-        <div >
+        <div sx={{margin:"30px 0px"}}>
             <Typography sx={{color: "red", fontSize: "50px", textAlign: "center", margin: "30px 0px"}}>Frequently Asked Questions About Us</Typography>
             <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} style={{backgroundColor: "black", color: "white"}}>
                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" >
@@ -82,8 +82,8 @@ export default function FAQ() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')} style={{backgroundColor: "black", color: "white"}}>
-                <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+            <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')} style={{backgroundColor: "black", color: "white"}}>
+                <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
                     <Typography sx={{fontSize: "35px"}}>Is there a community or multiplayer feature?</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -92,8 +92,8 @@ export default function FAQ() {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')} style={{backgroundColor: "black", color: "white"}}>
-                <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+            <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')} style={{backgroundColor: "black", color: "white"}}>
+                <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
                     <Typography sx={{fontSize: "35px"}}>What are the system requirements for playing games on the website?</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
