@@ -5,7 +5,7 @@ import AboutUs from "@/ui/about/AboutUs";
 import Banner from "@/ui/banner/Banner";
 import CountSection from "@/ui/countUp/CountSection";
 import GallerySection from "@/ui/gallery/GallerySection";
-import Faq from '@/ui/Faq/Faq';
+import FAQ from '@/ui/faq/FAQ';
 
 const HomePage = () => {
   return (
@@ -17,7 +17,7 @@ const HomePage = () => {
       <CountSection></CountSection>
       <AboutUs></AboutUs>
       <ShowCase></ShowCase>
-      <Faq></Faq>
+      <FAQ></FAQ>
     </div>
   );
 };
