@@ -5,7 +5,8 @@ import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
-
+import { Press_Start_2P } from 'next/font/google'
+const Press = Press_Start_2P({ subsets: ['latin'],display: 'swap', weight: "400" })
 const Accordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props}/>
 ))(({ theme }) => ({
@@ -51,7 +52,7 @@ export default function FAQ() {
 
     return (
         <div sx={{margin:"30px 0px"}}>
-            <Typography sx={{color: "red", fontSize: "50px", textAlign: "center", margin: "30px 0px"}}>Frequently Asked Questions About Us</Typography>
+            <Typography sx={{color: "red", fontSize: "30px", textAlign: "center", margin: "30px 0px"}} className={Press.className}>Frequently Asked Questions About Us</Typography>
             <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} style={{backgroundColor: "black", color: "white"}}>
                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" >
                     <Typography sx={{fontSize: "35px"}}>What kind of games are available on the website?</Typography>

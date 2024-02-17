@@ -4,7 +4,7 @@ import Lottie from 'lottie-react';
 import { GiCrenelCrown } from "react-icons/gi";
 const AboutUs = () => {
     return (
-        <div style={{ backgroundColor: "red" }}>
+        <div style={{ backgroundColor: "red" , marginTop: "100px"}}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                 <div style={{ width: "700px", flex: "1" }}>
                     <Lottie animationData={aboutAnimation}></Lottie>
