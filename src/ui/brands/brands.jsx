@@ -12,19 +12,19 @@ const brands = () => {
             <Marquee autoFill={true} pauseOnHover={true}>
                 <div>
                     <div>
-                        <Image src={img1} alt="brand1"></Image>
+                        <Image src={pic1} alt="brand1"></Image>
                     </div>
                     <div>
-                    <Image src={img2} alt="brand2"></Image>
+                    <Image src={pic2} alt="brand2"></Image>
                     </div>
                     <div>
-                    <Image src={img3} alt="brand3"></Image>
+                    <Image src={pic3} alt="brand3"></Image>
                     </div>
                     <div>
-                    <Image src={img4} alt="brand4"></Image>
+                    <Image src={pic4} alt="brand4"></Image>
                     </div>
                     <div>
-                    <Image src={img5} alt="brand5"></Image>
+                    <Image src={pic5} alt="brand5"></Image>
                     </div>
                 </div>
             </Marquee>
